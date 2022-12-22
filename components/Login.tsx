@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function Login() {
     return (
         <div className={styles.container}>
-
             <motion.form action="/main" 
                 initial={{ scale: 0 }}
                 animate={{ rotate: 360, scale: 1 }}
@@ -17,8 +16,8 @@ export default function Login() {
                 <h2>Iniciar Sesión</h2>
                 <div className={styles.formContainer}>
                     <div className={styles.formGroup}>
-                        <input className={styles.formInput} type="text" placeholder=' ' />
-                        <label className={styles.formLabel} htmlFor="">Usuario</label>
+                        <input className={styles.formInput} name='user' type="text" placeholder=' ' />
+                        <label className={styles.formLabel} htmlFor="user">Usuario</label>
                         <span className={styles.formLine}></span>
                     </div>
                     <div className={styles.formGroup}>                        
