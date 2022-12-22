@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #0078FF;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar div {
+    padding: 1em 3em;
+}
+
+.navbar div:hover {
+    background-color: azure;
+    color: #000000;
+    padding: 1em 3em;
+}

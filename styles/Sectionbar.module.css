@@ -1,0 +1,13 @@
+.sectionBar {
+    background-color: aliceblue;
+    height: 50px;
+    max-width: 98%;
+    margin: 10px auto;
+}
+
+.sectionBar section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
