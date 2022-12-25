@@ -14,3 +14,8 @@
     color: #000000;
     padding: 1em 3em;
 }
+
+.navbar div:active {
+    background-color: azure !important;
+    color: #000000 !important;
+}
