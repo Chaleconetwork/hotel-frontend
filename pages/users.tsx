@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SectionBar from '../components/SectionBar'
 
-export default function users() {
+export default function Users() {
 
     // const [dato, setDato] = useState<any[]>([]);
     // async function getUsers() {
