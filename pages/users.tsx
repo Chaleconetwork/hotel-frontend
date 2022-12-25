@@ -17,7 +17,7 @@ export default function users() {
     }
 
     useEffect(() => {
-        getUsers();
+        // getUsers();
     }, [])
 
     if (dato.length == 0) {
