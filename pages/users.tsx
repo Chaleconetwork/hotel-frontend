@@ -20,13 +20,13 @@ export default function users() {
         // getUsers();
     }, [])
 
-    if (dato.length == 0) {
-        return (
-            <div>
-                <h2>Cargando...</h2>
-            </div>
-        );
-    }
+    // if (dato.length == 0) {
+    //     return (
+    //         <div>
+    //             <h2>Cargando...</h2>
+    //         </div>
+    //     );
+    // }
 
     return (
         <>
