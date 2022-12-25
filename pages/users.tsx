@@ -3,18 +3,18 @@ import SectionBar from '../components/SectionBar'
 
 export default function users() {
 
-    const [dato, setDato] = useState<any[]>([]);
-    async function getUsers() {
-        try {
-            const url = await fetch('http://localhost:5107/api/User');
-            const response = await url.json();
-            setDato(response);
+    // const [dato, setDato] = useState<any[]>([]);
+    // async function getUsers() {
+    //     try {
+    //         const url = await fetch('http://localhost:5107/api/User');
+    //         const response = await url.json();
+    //         setDato(response);
     
-            console.log(dato);
-        }catch (e) {
+    //         console.log(dato);
+    //     }catch (e) {
 
-        }
-    }
+    //     }
+    // }
 
     useEffect(() => {
         // getUsers();
@@ -32,7 +32,7 @@ export default function users() {
         <>
             <SectionBar name='Usuarios' />
             <div className='containerMain'>
-                Usuarios <br />
+                {/* Usuarios <br />
                 {
                     dato.map(i => (
                         <div key={i.id}>
@@ -41,7 +41,7 @@ export default function users() {
                             {i.status}
                         </div>
                     ))
-                }
+                } */}
             </div>
         </>
     )
