@@ -1,6 +1,7 @@
 .container {
     display: flex;
-    margin-top: -150px;
+    height: 100vh;
+    align-items: center;
 }
 
 .container h2 {
@@ -117,7 +118,7 @@
     }
 }
 
-@media (min-width: 1001px) and (max-width: 2000px) { 
+/* @media (min-width: 1001px) and (max-width: 2000px) { 
     .container {        
         margin-top: -105px;
     }
@@ -125,9 +126,9 @@
     .container form {
         margin-bottom: 100px;
     }
-}
+} */
 
-@media (min-width: 2001px) and (max-width: 3000px) { 
+/* @media (min-width: 2001px) and (max-width: 3000px) { 
     .container {        
         margin-top: -205px;
     }
@@ -135,4 +136,4 @@
     .container form {
         margin-bottom: 100px;
     }
-}
+} */
