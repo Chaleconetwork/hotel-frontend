@@ -42,8 +42,8 @@ export default function Login() {
             return false;
         }
 
-        Auth.set(response);
-        setIsAuth(true);
+        Auth.set(response); //Localstorage 
+        setIsAuth(true); //Context
         Router.push('/dashboard');
     }
 

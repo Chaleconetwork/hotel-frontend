@@ -37,7 +37,7 @@ export const Auth = {
     get(): iUser | null {
         if (typeof window !== 'undefined') {
             let data = localStorage.getItem(_item);
-
+            
             if (!data) {
                 return null;
             }
