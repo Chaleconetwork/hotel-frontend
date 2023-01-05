@@ -33,3 +33,7 @@ a {
     max-height: 85vh;
     padding: 20px;
 }
+
+.btnLogOut {
+    cursor: pointer;
+}

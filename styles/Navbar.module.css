@@ -2,17 +2,17 @@
     background-color: #0078FF;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar div {
-    padding: 1em 3em;
+    padding: 0.5em 4em;
 }
 
 .navbar div:hover {
-    background-color: azure;
-    color: #000000;
-    padding: 1em 3em;
+    background-color: #3292ff;
+    /* color: #000000; */
+    transition: .2s;
 }
 
 .navbar div:active {

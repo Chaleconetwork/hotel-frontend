@@ -1,9 +1,11 @@
 import styles from '../styles/Login.module.css'
 import Link from 'next/link'
 import { motion } from "framer-motion";
-import React, { ChangeEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, useContext, useState } from 'react';
 import Router from 'next/router';
 import { Fetch } from '../utils/api/fetch'
+import { Auth, UserContext } from '../utils/context/userContext';
+import iUser from '../utils/interface/iUser';
 
 interface iFormData {
     username: string;
@@ -11,6 +13,9 @@ interface iFormData {
 }
 
 export default function Login() {
+
+    const usuarioContext = useContext(UserContext);
+    const [isAuth, setIsAuth] = [usuarioContext?.isAuthContext[0], usuarioContext?.isAuthContext[1]];
 
     const [user, setUser] = useState<iFormData>({ username: '', password: '' });
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
@@ -26,14 +31,20 @@ export default function Login() {
         }
 
         const url = 'http://localhost:5107/api/Auth/loginUser'
-        const response = await Fetch.postApi(url, dto);
+        const response = await Fetch.postApi(url, dto) as iUser;
+        
+        if (!response) {
+            return false;
+        }
 
         if (response.isError) {
             alert(response.messageError);
             return false;
         }
 
-        Router.push('/main');
+        Auth.set(response);
+        setIsAuth(true);
+        Router.push('/dashboard');
     }
 
     return (
